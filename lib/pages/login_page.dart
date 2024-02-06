@@ -93,12 +93,26 @@ class _LoginPageState extends State<LoginPage> {
                         padding: EdgeInsets.symmetric(vertical: 5),
                         child: Row(
                           children: [
-                            Checkbox(value: true, onChanged: null),
+                            Checkbox(
+                              value: false,
+                              onChanged: null,
+                              activeColor: Colors.pink,
+                            ),
                             Padding(
                               padding: EdgeInsets.only(right: 90),
-                              child: Text("Remember me"),
+                              child: Text(
+                                "Remember me",
+                                style: TextStyle(
+                                  color: Colors.pink,
+                                ),
+                              ),
                             ),
-                            Text("Forgot Password?"),
+                            Text(
+                              "Forgot Password?",
+                              style: TextStyle(
+                                color: Colors.pink,
+                              ),
+                            ),
                           ],
                         ),
                       ),
