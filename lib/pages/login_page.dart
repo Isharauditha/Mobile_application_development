@@ -23,6 +23,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
+        
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 40),
           child: Column(
@@ -95,11 +96,12 @@ class _LoginPageState extends State<LoginPage> {
                           children: [
                             Checkbox(
                               value: false,
+                              side: BorderSide(color: Colors.pink,),
                               onChanged: null,
                               activeColor: Colors.pink,
                             ),
                             Padding(
-                              padding: EdgeInsets.only(right: 90),
+                              padding: EdgeInsets.only(right: 70),
                               child: Text(
                                 "Remember me",
                                 style: TextStyle(
@@ -185,9 +187,9 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                             Text(
-                              "Sign In",
+                              "Sign Up",
                               style: TextStyle(
-                                color: Colors.blue,
+                                color: Colors.pink,
                               ),
                             ),
                           ],
